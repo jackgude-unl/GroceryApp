@@ -1,0 +1,12 @@
+C:\Users\jackg\source\repos\GroceryApp\Engines\bin\Debug\net7.0\Engines.deps.json
+C:\Users\jackg\source\repos\GroceryApp\Engines\bin\Debug\net7.0\Engines.dll
+C:\Users\jackg\source\repos\GroceryApp\Engines\bin\Debug\net7.0\Engines.pdb
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\Engines.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\Engines.AssemblyInfoInputs.cache
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\Engines.AssemblyInfo.cs
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\Engines.csproj.CoreCompileInputs.cache
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\Engines.sourcelink.json
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\Engines.dll
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\refint\Engines.dll
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\Engines.pdb
+C:\Users\jackg\source\repos\GroceryApp\Engines\obj\Debug\net7.0\ref\Engines.dll

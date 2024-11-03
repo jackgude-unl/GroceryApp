@@ -1,0 +1,12 @@
+C:\Users\jackg\source\repos\GroceryApp\Accessors\bin\Debug\net7.0\Accessors.deps.json
+C:\Users\jackg\source\repos\GroceryApp\Accessors\bin\Debug\net7.0\Accessors.dll
+C:\Users\jackg\source\repos\GroceryApp\Accessors\bin\Debug\net7.0\Accessors.pdb
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.AssemblyInfoInputs.cache
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.AssemblyInfo.cs
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.csproj.CoreCompileInputs.cache
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.sourcelink.json
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.dll
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\refint\Accessors.dll
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.pdb
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\ref\Accessors.dll
