@@ -16,6 +16,7 @@ Feel free to add your own.
 This should set up your local instance of the database.
 You will need to keep SQL Server Management Studio running in the background whenever you are accessing the database.
 
+---
 You may need to install Microsoft.Data.SqlClient on your own machine.
 To do so
 1. Open the project in Visual Studio 2022.
