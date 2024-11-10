@@ -10,3 +10,4 @@ C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.dll
 C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\refint\Accessors.dll
 C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.pdb
 C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\ref\Accessors.dll
+C:\Users\jackg\source\repos\GroceryApp\Accessors\obj\Debug\net7.0\Accessors.csproj.AssemblyReference.cache

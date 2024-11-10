@@ -10,7 +10,7 @@ namespace Accessors.Interfaces
 {
     public interface IUser
     {
-        string UserId { get; }
+        int UserId { get; }
         string FirstName { get; }
         string LastName { get; }
         string Email { get; }
@@ -26,7 +26,7 @@ namespace Accessors.Interfaces
 
     public interface IProduct
     {
-        string ProductId { get; }
+        int ProductId { get; }
         string Name { get; }
         string Description { get; } 
         string Category { get; }
@@ -43,8 +43,8 @@ namespace Accessors.Interfaces
 
     public interface ICart
     {
-        string CartId { get; }
-        string UserId { get; }
+        int CartId { get; }
+        int UserId { get; }
         IEnumerable<Product> ProductsInCart { get; }
         bool AddProduct(Product product);
         bool RemoveProduct(Product product);

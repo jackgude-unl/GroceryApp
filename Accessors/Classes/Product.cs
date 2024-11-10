@@ -9,14 +9,14 @@ namespace Accessors.Classes
 {
     public class Product : IProduct
     {
-        public string ProductId { get; }
+        public int ProductId { get; }
         public string Name { get; }
         public string Description { get; }
         public string Category { get; }
         public double Price { get;}
         public IEnumerable<string> Images { get; }
 
-        public Product(string productId, string name, string description, string category, double price, IEnumerable<string> images)
+        public Product(int productId, string name, string description, string category, double price, IEnumerable<string> images)
         {
             ProductId = productId;
             Name = name;
