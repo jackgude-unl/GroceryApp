@@ -1,51 +1,780 @@
 {
   "version": 2,
-  "dgSpecHash": "OPLXAJZ+bhc=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\jackg\\source\\repos\\GroceryApp\\Console\\Console.csproj",
+  "dgSpecHash": "wWZzJsGpRT4=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Brandon\\GroceryApp\\Console\\Console.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jackg\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.2\\microsoft.data.sqlclient.5.2.2.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.2.0\\microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identity.client\\4.61.3\\microsoft.identity.client.4.61.3.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.61.3\\microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.35.0\\microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identitymodel.logging\\6.35.0\\microsoft.identitymodel.logging.6.35.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.35.0\\microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.runtime.caching\\6.0.0\\system.runtime.caching.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+    "C:\\Users\\Brandon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Brandon\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Data.SqlClient'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Data.SqlClient'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Data.SqlClient'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Data.SqlClient'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encoding' from remote source 'https://packagesource1/FindPackagesById()?id='System.Text.Encoding'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encoding"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encoding' from remote source 'https://packagesource1/FindPackagesById()?id='System.Text.Encoding'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encoding"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encoding' from remote source 'https://packagesource/FindPackagesById()?id='System.Text.Encoding'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encoding"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encoding' from remote source 'https://packagesource/FindPackagesById()?id='System.Text.Encoding'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encoding"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client.Extensions.Msal' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Identity.Client.Extensions.Msal'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client.Extensions.Msal"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client.Extensions.Msal' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Identity.Client.Extensions.Msal'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client.Extensions.Msal"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory' from remote source 'https://packagesource/FindPackagesById()?id='System.Memory'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory' from remote source 'https://packagesource/FindPackagesById()?id='System.Memory'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Core' from remote source 'https://packagesource/FindPackagesById()?id='Azure.Core'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Core"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Core' from remote source 'https://packagesource/FindPackagesById()?id='Azure.Core'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Core"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Threading.Tasks.Extensions' from remote source 'https://packagesource1/FindPackagesById()?id='System.Threading.Tasks.Extensions'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Threading.Tasks.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Threading.Tasks.Extensions' from remote source 'https://packagesource1/FindPackagesById()?id='System.Threading.Tasks.Extensions'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Threading.Tasks.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Threading.Tasks.Extensions' from remote source 'https://packagesource/FindPackagesById()?id='System.Threading.Tasks.Extensions'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Threading.Tasks.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Threading.Tasks.Extensions' from remote source 'https://packagesource/FindPackagesById()?id='System.Threading.Tasks.Extensions'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Threading.Tasks.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Numerics.Vectors' from remote source 'https://packagesource/FindPackagesById()?id='System.Numerics.Vectors'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Numerics.Vectors"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Numerics.Vectors' from remote source 'https://packagesource/FindPackagesById()?id='System.Numerics.Vectors'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Numerics.Vectors"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Diagnostics.DiagnosticSource' from remote source 'https://packagesource/FindPackagesById()?id='System.Diagnostics.DiagnosticSource'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Diagnostics.DiagnosticSource"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Diagnostics.DiagnosticSource' from remote source 'https://packagesource/FindPackagesById()?id='System.Diagnostics.DiagnosticSource'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Diagnostics.DiagnosticSource"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Diagnostics.DiagnosticSource' from remote source 'https://packagesource1/FindPackagesById()?id='System.Diagnostics.DiagnosticSource'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Diagnostics.DiagnosticSource"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Diagnostics.DiagnosticSource' from remote source 'https://packagesource1/FindPackagesById()?id='System.Diagnostics.DiagnosticSource'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Diagnostics.DiagnosticSource"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encodings.Web' from remote source 'https://packagesource/FindPackagesById()?id='System.Text.Encodings.Web'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encodings.Web"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.ClientModel' from remote source 'https://packagesource/FindPackagesById()?id='System.ClientModel'&semVerLevel=2.0.0'.",
+      "libraryId": "System.ClientModel"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encodings.Web' from remote source 'https://packagesource/FindPackagesById()?id='System.Text.Encodings.Web'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encodings.Web"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.ClientModel' from remote source 'https://packagesource/FindPackagesById()?id='System.ClientModel'&semVerLevel=2.0.0'.",
+      "libraryId": "System.ClientModel"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime' from remote source 'https://packagesource1/FindPackagesById()?id='System.Runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime' from remote source 'https://packagesource1/FindPackagesById()?id='System.Runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Bcl.AsyncInterfaces' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Bcl.AsyncInterfaces'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Bcl.AsyncInterfaces"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.ClientModel' from remote source 'https://packagesource1/FindPackagesById()?id='System.ClientModel'&semVerLevel=2.0.0'.",
+      "libraryId": "System.ClientModel"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.ClientModel' from remote source 'https://packagesource1/FindPackagesById()?id='System.ClientModel'&semVerLevel=2.0.0'.",
+      "libraryId": "System.ClientModel"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Bcl.AsyncInterfaces' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Bcl.AsyncInterfaces'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Bcl.AsyncInterfaces"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Numerics.Vectors' from remote source 'https://packagesource1/FindPackagesById()?id='System.Numerics.Vectors'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Numerics.Vectors"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Numerics.Vectors' from remote source 'https://packagesource1/FindPackagesById()?id='System.Numerics.Vectors'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Numerics.Vectors"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Bcl.AsyncInterfaces' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Bcl.AsyncInterfaces'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Bcl.AsyncInterfaces"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Bcl.AsyncInterfaces' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Bcl.AsyncInterfaces'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Bcl.AsyncInterfaces"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encodings.Web' from remote source 'https://packagesource1/FindPackagesById()?id='System.Text.Encodings.Web'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encodings.Web"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Encodings.Web' from remote source 'https://packagesource1/FindPackagesById()?id='System.Text.Encodings.Web'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Encodings.Web"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory.Data' from remote source 'https://packagesource1/FindPackagesById()?id='System.Memory.Data'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory.Data"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory.Data' from remote source 'https://packagesource1/FindPackagesById()?id='System.Memory.Data'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory.Data"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime' from remote source 'https://packagesource/FindPackagesById()?id='System.Runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime' from remote source 'https://packagesource/FindPackagesById()?id='System.Runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Abstractions' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Abstractions'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Abstractions' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Abstractions'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.CSharp' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.CSharp'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.CSharp"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.CSharp' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.CSharp'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.CSharp"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory.Data' from remote source 'https://packagesource/FindPackagesById()?id='System.Memory.Data'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory.Data"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory.Data' from remote source 'https://packagesource/FindPackagesById()?id='System.Memory.Data'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory.Data"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.CSharp' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.CSharp'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.CSharp"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.CSharp' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.CSharp'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.CSharp"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.IdentityModel.Tokens.Jwt' from remote source 'https://packagesource/FindPackagesById()?id='System.IdentityModel.Tokens.Jwt'&semVerLevel=2.0.0'.",
+      "libraryId": "System.IdentityModel.Tokens.Jwt"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.IdentityModel.Tokens.Jwt' from remote source 'https://packagesource/FindPackagesById()?id='System.IdentityModel.Tokens.Jwt'&semVerLevel=2.0.0'.",
+      "libraryId": "System.IdentityModel.Tokens.Jwt"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.IdentityModel.Tokens.Jwt' from remote source 'https://packagesource1/FindPackagesById()?id='System.IdentityModel.Tokens.Jwt'&semVerLevel=2.0.0'.",
+      "libraryId": "System.IdentityModel.Tokens.Jwt"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.IdentityModel.Tokens.Jwt' from remote source 'https://packagesource1/FindPackagesById()?id='System.IdentityModel.Tokens.Jwt'&semVerLevel=2.0.0'.",
+      "libraryId": "System.IdentityModel.Tokens.Jwt"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Protocols'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Protocols'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Abstractions' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Abstractions'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Abstractions' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Abstractions'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Tokens' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Tokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Tokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Tokens' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Tokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Tokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Protocols'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Protocols'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime.Caching' from remote source 'https://packagesource/FindPackagesById()?id='System.Runtime.Caching'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime.Caching"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime.Caching' from remote source 'https://packagesource/FindPackagesById()?id='System.Runtime.Caching'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime.Caching"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Configuration.ConfigurationManager' from remote source 'https://packagesource1/FindPackagesById()?id='System.Configuration.ConfigurationManager'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Configuration.ConfigurationManager"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Configuration.ConfigurationManager' from remote source 'https://packagesource1/FindPackagesById()?id='System.Configuration.ConfigurationManager'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Configuration.ConfigurationManager"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Logging' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Logging'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Logging"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Logging' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Logging'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Logging"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime.Caching' from remote source 'https://packagesource1/FindPackagesById()?id='System.Runtime.Caching'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime.Caching"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Runtime.Caching' from remote source 'https://packagesource1/FindPackagesById()?id='System.Runtime.Caching'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Runtime.Caching"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Logging' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Logging'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Logging"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Logging' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Logging'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Logging"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Identity' from remote source 'https://packagesource/FindPackagesById()?id='Azure.Identity'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Identity"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Identity' from remote source 'https://packagesource/FindPackagesById()?id='Azure.Identity'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Identity"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Identity.Client'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Identity.Client'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.JsonWebTokens' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.JsonWebTokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.JsonWebTokens' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.JsonWebTokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Identity' from remote source 'https://packagesource1/FindPackagesById()?id='Azure.Identity'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Identity"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Identity' from remote source 'https://packagesource1/FindPackagesById()?id='Azure.Identity'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Identity"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols.OpenIdConnect' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Protocols.OpenIdConnect'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols.OpenIdConnect' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.IdentityModel.Protocols.OpenIdConnect'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.SqlServer.Server' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.SqlServer.Server'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.SqlServer.Server"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.SqlServer.Server' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.SqlServer.Server'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.SqlServer.Server"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Tokens' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Tokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Tokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Tokens' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Tokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Tokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols.OpenIdConnect' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Protocols.OpenIdConnect'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.Protocols.OpenIdConnect' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.Protocols.OpenIdConnect'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Identity.Client'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Identity.Client'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient.SNI.runtime' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Data.SqlClient.SNI.runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient.SNI.runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient.SNI.runtime' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Data.SqlClient.SNI.runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient.SNI.runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient.SNI.runtime' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Data.SqlClient.SNI.runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient.SNI.runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Data.SqlClient.SNI.runtime' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.Data.SqlClient.SNI.runtime'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Data.SqlClient.SNI.runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Configuration.ConfigurationManager' from remote source 'https://packagesource/FindPackagesById()?id='System.Configuration.ConfigurationManager'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Configuration.ConfigurationManager"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Configuration.ConfigurationManager' from remote source 'https://packagesource/FindPackagesById()?id='System.Configuration.ConfigurationManager'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Configuration.ConfigurationManager"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.JsonWebTokens' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.JsonWebTokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.IdentityModel.JsonWebTokens' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.IdentityModel.JsonWebTokens'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.SqlServer.Server' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.SqlServer.Server'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.SqlServer.Server"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.SqlServer.Server' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.SqlServer.Server'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.SqlServer.Server"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Core' from remote source 'https://packagesource1/FindPackagesById()?id='Azure.Core'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Core"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Azure.Core' from remote source 'https://packagesource1/FindPackagesById()?id='Azure.Core'&semVerLevel=2.0.0'.",
+      "libraryId": "Azure.Core"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client.Extensions.Msal' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Identity.Client.Extensions.Msal'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client.Extensions.Msal"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Identity.Client.Extensions.Msal' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.Identity.Client.Extensions.Msal'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.Identity.Client.Extensions.Msal"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory' from remote source 'https://packagesource1/FindPackagesById()?id='System.Memory'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Memory' from remote source 'https://packagesource1/FindPackagesById()?id='System.Memory'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Memory"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.NETCore.Targets' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.NETCore.Targets'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.NETCore.Targets"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.NETCore.Targets' from remote source 'https://packagesource1/FindPackagesById()?id='Microsoft.NETCore.Targets'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.NETCore.Targets"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.NETCore.Targets' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.NETCore.Targets'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.NETCore.Targets"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.NETCore.Targets' from remote source 'https://packagesource/FindPackagesById()?id='Microsoft.NETCore.Targets'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.NETCore.Targets"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Json' from remote source 'https://packagesource/FindPackagesById()?id='System.Text.Json'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Json"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Json' from remote source 'https://packagesource/FindPackagesById()?id='System.Text.Json'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Json"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Json' from remote source 'https://packagesource1/FindPackagesById()?id='System.Text.Json'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Json"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Text.Json' from remote source 'https://packagesource1/FindPackagesById()?id='System.Text.Json'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Text.Json"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource1/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource1/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource1/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.ProtectedData' from remote source 'https://packagesource1/FindPackagesById()?id='System.Security.Cryptography.ProtectedData'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.Cng' from remote source 'https://packagesource1/FindPackagesById()?id='System.Security.Cryptography.Cng'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.Cng"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.Cng' from remote source 'https://packagesource1/FindPackagesById()?id='System.Security.Cryptography.Cng'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.Cng"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.Cng' from remote source 'https://packagesource/FindPackagesById()?id='System.Security.Cryptography.Cng'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.Cng"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Security.Cryptography.Cng' from remote source 'https://packagesource/FindPackagesById()?id='System.Security.Cryptography.Cng'&semVerLevel=2.0.0'.",
+      "libraryId": "System.Security.Cryptography.Cng"
+    }
+  ]
 }

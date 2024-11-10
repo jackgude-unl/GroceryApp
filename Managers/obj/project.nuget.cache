@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S4hhJtTGKPs=",
+  "dgSpecHash": "PltU/9OhsNo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jackg\\source\\repos\\GroceryApp\\Managers\\Managers.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\jackg\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Brandon\\GroceryApp\\Managers\\Managers.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
