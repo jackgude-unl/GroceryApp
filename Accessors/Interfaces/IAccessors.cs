@@ -28,9 +28,8 @@ namespace Accessors.Interfaces
     {
         int ProductId { get; }
         string Name { get; }
-        string Description { get; } 
-        string Category { get; }
-        double Price { get; }
+        string Description { get; }
+        decimal Price { get; }
         IEnumerable<string> Images { get; }
     }
 
@@ -38,16 +37,15 @@ namespace Accessors.Interfaces
     {
         IEnumerable<Product> GetAllProducts();
         Product GetProductById(int id);
-        bool AddProductToDb(Product product);
     }
 
     public interface ICart
     {
         int CartId { get; }
         int UserId { get; }
-        IEnumerable<Product> ProductsInCart { get; }
-        bool AddProduct(Product product);
-        bool RemoveProduct(Product product);
+        List<CartProduct> ProductsInCart { get; }
+        void AddProduct(int productId, int quantity);
+        void RemoveProduct(Product product);
         double CalculateTotal();
     }
 
