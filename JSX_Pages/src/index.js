@@ -4,18 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function MainPage() {
-  return <h1 className="greeting">Placeholder Name :0</h1>;
-}
-
+// Initialize the root using createRoot
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render only the App component
 root.render(
-  <React.StrictMode>
-    <MainPage />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Log performance metrics (optional)
 reportWebVitals();
+
