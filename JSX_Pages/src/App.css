@@ -4,7 +4,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #add8e6;
+    background-color: #f5f5f5; /* Light gray for a clean, professional look */
+    color: #333; /* Ensure text is easily readable */
 }
 
 .App {
@@ -14,7 +15,7 @@ body {
 .App-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between; /* Separates the title and navigation */
     background-color: #808080;
     padding: 10px 20px;
     color: white;
@@ -22,7 +23,7 @@ body {
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    gap: 20px;
+    z-index: 1000;
 }
 
 .App-title {
@@ -32,21 +33,50 @@ body {
 
 .App-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
     gap: 20px;
 }
 
-.App-nav a {
+.nav-links a {
     color: white;
+    font-size: 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.App-nav a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
+.login-link {
+    margin-left: auto;
+    padding-right: 50px;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Distinct Login button background */
+    transition: background-color 0.3s;
+}
+
+.login-link a:hover {
+    background-color: #45a049; /* Changes background color on hover */
+}
+
+/* Main content spacing */
 main {
-    padding-top: 80px;
+    padding-top: 93px;
     text-align: center;
 }
 
@@ -64,7 +94,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Adds spacing between fields */
+    gap: 15px; 
     max-width: 300px;
     margin: 0 auto;
 }
@@ -96,6 +126,136 @@ main {
 .login-form button:hover {
     background-color: #45a049;
 }
+.hero {
+    position: relative;
+    background-image: url('/public/grocerybanner.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero h2,
+.hero .search-bar,
+.hero .find-btn {
+    position: relative;
+    z-index: 2; 
+}
+
+.search-bar {
+    padding: 10px;
+    width: 60%;
+    margin: 20px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.find-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.find-btn:hover {
+    background-color: #45a049;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 60%;
+    margin: 20px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.find-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.find-btn:hover {
+    background-color: #45a049;
+}
+
+/* Categories Section */
+.categories-banner {
+    background-color: #c5c4c4; /* Light gray banner background */
+    padding: 60px; /* Adds space around the category buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin: 20px auto; /* Centers the banner horizontally */
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for the buttons */
+    width: 150px;
+    height: 60px; /* Ensures consistent height for buttons */
+    text-align: center; /* Aligns multi-line text */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.category-item:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* Special Offers Section */
+.special-offers {
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.special-offers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.special-offers li {
+    margin: 10px 0;
+    font-weight: bold;
+}
 
 

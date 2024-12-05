@@ -2,14 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
-function HomePage() {
-    return (
-        <div className="home">
-            <p>Welcome to our grocery store! Browse products and more.</p>
-        </div>
-    );
-}
-
 function LoginPage() {
     return (
         <div className="login">
@@ -36,10 +28,14 @@ function App() {
                 <header className="App-header">
                     <h1 className="App-title">Group 12's Groceries</h1>
                     <nav className="App-nav">
-                        <Link to="/">Home</Link>
-                        <Link to="/login">Login</Link>
-                        <Link to="/products">Products</Link>
-                        <Link to="/cart">Cart</Link>
+                        <div className="nav-links">
+                            <Link to="/">Home</Link>
+                            <Link to="/products">Products</Link>
+                            <Link to="/cart">Cart</Link>
+                        </div>
+                        <div className="login-link">
+                            <Link to="/login">Login</Link>
+                        </div>
                     </nav>
                 </header>
                 <main>
@@ -52,7 +48,31 @@ function App() {
         </Router>
     );
 }
-
+function HomePage() {
+    return (
+        <div className="home">
+            <section className="hero">
+                <div className="hero-content">
+                    <h2>Your One-Stop Shop for Fresh and Quality Groceries!</h2>
+                    <input type="text" placeholder="Search for products..." className="search-bar" />
+                    <button className="find-btn">Find</button>
+                </div>
+            </section>
+            <section className="categories">
+                <h3>Shop by Category</h3>
+                <div className='categories-banner'>
+                    <div className="category-list">
+                        <div className="category-item">Fresh Foods</div>
+                        <div className="category-item">Pantry Essentials</div>
+                        <div className="category-item">Frozen & Prepared Foods</div>
+                        <div className="category-item">Beverages</div>
+                        <div className="category-item">Snacks & Desserts</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+}
 export default App;
 
 
