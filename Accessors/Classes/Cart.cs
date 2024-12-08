@@ -41,6 +41,20 @@ namespace Accessors.Classes
         }
     }
 
+    public class CartProduct : ICartProduct
+    {
+        public int CartId { get; }
+        public int ProductId { get; }
+        public int Quantity { get; set; }
+
+        public CartProduct(int cartId, int productId, int quantity)
+        {
+            CartId = cartId;
+            ProductId = productId;
+            Quantity = quantity;
+        }
+    }
+
     public class CartAccessor : ICartAccessor
     {
         public IEnumerable<Cart> GetAllCarts()

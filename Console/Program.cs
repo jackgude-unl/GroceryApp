@@ -6,14 +6,78 @@ public class Program
 {
     private static void Main()
     {
-        PrintUsers();
-        PrintProducts();
-        PrintCarts();
+        //PrintUsers();
+        //PrintProducts();
+        //PrintCarts();
+
+        PrintAllProductsByCategory();
+
+        PrintCurrentSale();
+        Console.WriteLine();
+        PrintProductsOnSale();
     }
 
     // A bunch of functions below that I used for initial development.
     // Saving them because they can probably be adapted to make Unit Tests.
     // Additionally useful to see how things work and test the database.
+    public static void PrintCategories()
+    {
+        var accessor = new CategoryAccessor();
+
+        foreach (var cat in accessor.GetAllCategories())
+        {
+            Console.WriteLine(string.Concat(cat.CategoryId, " - ", cat.CategoryName));
+        }
+    }
+    public static void PrintProductsByCategoryId(int id)
+    {
+        var accessor = new ProductAccessor();
+
+        foreach (var product in accessor.GetProductsByCategoryId(id))
+        {
+            Console.WriteLine(string.Concat(product.ProductId, "  ", product.Name, " - ", product.Description, " $", product.Price));
+        }
+    }
+
+    public static void PrintAllProductsByCategory()
+    {
+        var catAccessor = new CategoryAccessor();
+        var prodAccessor = new ProductAccessor();
+
+        foreach (var category in catAccessor.GetAllCategories())
+        {
+            Console.WriteLine(string.Concat("----------  ", category.CategoryName, "  ----------"));
+            foreach (var product in prodAccessor.GetProductsByCategoryId(category.CategoryId))
+            {
+                Console.WriteLine(string.Concat(product.ProductId, "  ", product.Name, " - ", product.Description, " $", product.Price));
+            }
+            Console.WriteLine();
+        }
+    }
+    public static void PrintCurrentSale()
+    {
+        const int padding = 15;
+        var accessor = new SaleAccessor();
+        var sale = accessor.GetCurrentSale();
+
+        Console.WriteLine(string.Concat("ID:".PadRight(padding), sale.SaleId, "\n",
+            "Sale Name:".PadRight(padding), sale.SaleName, "\n",
+            "Discount %:".PadRight(padding), sale.DiscountPercent, "\n",
+            "Discount Val:".PadRight(padding), sale.DiscountValue, "\n",
+            "Start:".PadRight(padding), sale.StartDate, "\n",
+            "End:".PadRight(padding), sale.EndDate));
+    }
+
+    public static void PrintProductsOnSale()
+    {
+        var accessor = new ProductAccessor();
+
+        foreach (var product in accessor.GetProductsOnSale())
+        {
+            Console.WriteLine(string.Concat(product.ProductId, "  ", product.Name, " - ", product.Description, " $", product.Price));
+        }
+    }
+
     public static void AddBobby()
     {
         var accessor = new UserAccessor();
