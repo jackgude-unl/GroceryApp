@@ -2,43 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/home';
-function LoginPage() {
-    return (
-        <div className="login">
-            <h1>Login</h1>
-            <form className="login-form">
-                <label>
-                    Username:
-                    <input type="text" name="username" required />
-                </label>
-                <label>
-                    Password:
-                    <input type="password" name="password" required />
-                </label>
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    );
-}
-
-function ProductsPage() {
-    return (
-        <div className="products-page">
-            <h2>Our Products</h2>
-            {}
-            <p>Product listing goes here.</p>
-        </div>
-    );
-}
-
-function CartPage() {
-    return (
-        <div className="cart-page">
-            <h2>Your Cart</h2>
-            <p>Your cart items will appear here.</p>
-        </div>
-    );
-}
+import LoginPage from './pages/login';
+import CartPage from './pages/login';
+import ProductPage from './pages/login';
 
 function App() {
     return (
