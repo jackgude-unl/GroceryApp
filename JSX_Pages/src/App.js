@@ -4,7 +4,7 @@ import './App.css';
 import HomePage from './pages/home';
 import LoginPage from './pages/login';
 import CartPage from './pages/login';
-import ProductPage from './pages/login';
+import ProductsPage from './pages/product';
 
 function App() {
     return (
