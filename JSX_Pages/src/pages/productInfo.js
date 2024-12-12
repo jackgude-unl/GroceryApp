@@ -8,6 +8,6 @@ function productInfoPage() {
             <h3>Price</h3>
             <body>Product Description</body>
             <button type="submit">Add to cart</button>
-        </div>
+        </div> 
     );
 }
