@@ -4,10 +4,13 @@ import '../App.css';
 function ProductInfoPage() {
     return(
         <div className="productInfo-page">
-            <h1>Product Name</h1>
-            <h3>Price</h3>
+            {/* Change the layout of the page to account for product images/information */}
+            <h1>Product Name (placeholder)</h1>
+            <h3>Unit Price: $</h3>
             <body>Product Description:</body>
-            <button className='cartAdd-btn'>Add to cart</button>
+            <body>Ratings: </body>
+            {/* Update the button perhaps?? */}
+            <button className='cartAdd-btn'>Add to cart</button> 
         </div> 
     );
 }
