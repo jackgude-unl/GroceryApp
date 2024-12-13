@@ -15,18 +15,15 @@ namespace Accessors.Classes
         public string Name { get; }
         public string Description { get; }
         public decimal Price { get;}
-        public string Category { get; }
-        public IEnumerable<string> Images { get; }
 
 
-        public Product(int productId, string name, string description, decimal price, string category, IEnumerable<string> images = null!)
+        public Product(int productId, string name, string description, decimal price)
         {
             ProductId = productId;
             Name = name;
             Description = description;
             Price = price;
-            Category = category;
-            Images = images;
+
         }
     }
 
@@ -68,8 +65,6 @@ namespace Accessors.Classes
                 row[1].ToString()!,
                 row[2].ToString()!,
                 (decimal)row[3],
-                row[5].ToString()!,
-                Enumerable.Empty<string>()
                 );
 
             return product;
