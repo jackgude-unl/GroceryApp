@@ -14,14 +14,14 @@ namespace Accessors.Interfaces
         string FirstName { get; }
         string LastName { get; }
         string Email { get; }
-        string Password { get; }
     }
 
     public interface IUserAccessor
     {
+        User? VerifyUser(string email, string password);
         IEnumerable<User> GetAllUsers();
         User GetUserById(int id);
-        bool AddUserToDb(User user);
+        bool AddUserToDb(User user, string password);
     }
 
     public interface IProduct
@@ -35,6 +35,8 @@ namespace Accessors.Interfaces
     public interface IProductAccessor
     {
         IEnumerable<Product> GetAllProducts();
+        IEnumerable<Product> GetProductsByCategoryId(int id);
+        IEnumerable<Product> GetProductsOnSale();
         Product GetProductById(int id);
     }
 
@@ -48,10 +50,43 @@ namespace Accessors.Interfaces
         double CalculateTotal();
     }
 
+    public interface ICartProduct
+    {
+        int CartId { get; }
+        int ProductId { get; }
+        int Quantity { get; set; }
+    }
+
     public interface ICartAccessor
     {
         IEnumerable<Cart> GetAllCarts();
         Cart GetCartByCartId(int id);
         Cart GetCartByUserId(int id);
+    }
+
+    public interface ICategory
+    {
+        int CategoryId { get; }
+        string CategoryName { get; }
+    }
+
+    public interface ICategoryAccessor
+    {
+        IEnumerable<Category> GetAllCategories();
+    }
+
+    public interface ISale
+    {
+        int SaleId { get; }
+        string SaleName { get; }
+        decimal DiscountPercent { get; }
+        decimal DiscountValue { get; }
+        DateTime StartDate { get; }
+        DateTime EndDate { get; }
+    }
+
+    public interface ISaleAccessor
+    {
+        Sale GetCurrentSale();
     }
 }
