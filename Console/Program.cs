@@ -1,6 +1,7 @@
 ﻿using Accessors.Classes;
 using Accessors.Interfaces;
 using Microsoft.Identity.Client;
+using static System.Net.Mime.MediaTypeNames;
 
 public class Program
 {
@@ -10,11 +11,29 @@ public class Program
         //PrintProducts();
         //PrintCarts();
 
-        PrintAllProductsByCategory();
+        //PrintAllProductsByCategory();
 
-        PrintCurrentSale();
-        Console.WriteLine();
-        PrintProductsOnSale();
+        //PrintCurrentSale();
+        //Console.WriteLine();
+        //PrintProductsOnSale();
+
+        CheckUserCredentialsAndPrintResult();
+    }
+
+    public static void CheckUserCredentialsAndPrintResult()
+    {
+        var accessor = new UserAccessor();
+
+        var u = accessor.VerifyUser("cc@test.com", "not-password");
+
+        if (u != null)
+        {
+            Console.WriteLine(u.FirstName + " " + u.LastName);
+        }
+        else
+        {
+            Console.WriteLine("Wrong Password");
+        }
     }
 
     // A bunch of functions below that I used for initial development.
@@ -82,9 +101,9 @@ public class Program
     {
         var accessor = new UserAccessor();
 
-        var u = new User("Bobby", "Hill", "DirtyDan@test.com", "propane");
+        var u = new User("Bobby", "Hill", "DirtyDan@test.com");
 
-        var success = accessor.AddUserToDb(u);
+        var success = accessor.AddUserToDb(u, "propane");
 
         Console.WriteLine(success ? "Success" : "Failure");
     }

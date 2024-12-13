@@ -15,15 +15,13 @@ namespace Accessors.Classes
         public string Name { get; }
         public string Description { get; }
         public decimal Price { get;}
-        public IEnumerable<string> Images { get; } 
 
-        public Product(int productId, string name, string description, decimal price, IEnumerable<string> images = null!)
+        public Product(int productId, string name, string description, decimal price)
         {
             ProductId = productId;
             Name = name;
             Description = description;
             Price = price;
-            Images = images;
         }
     }
 

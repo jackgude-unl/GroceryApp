@@ -14,14 +14,14 @@ namespace Accessors.Interfaces
         string FirstName { get; }
         string LastName { get; }
         string Email { get; }
-        string Password { get; }
     }
 
     public interface IUserAccessor
     {
+        User? VerifyUser(string email, string password);
         IEnumerable<User> GetAllUsers();
         User GetUserById(int id);
-        bool AddUserToDb(User user);
+        bool AddUserToDb(User user, string password);
     }
 
     public interface IProduct
@@ -30,7 +30,6 @@ namespace Accessors.Interfaces
         string Name { get; }
         string Description { get; }
         decimal Price { get; }
-        IEnumerable<string> Images { get; }
     }
 
     public interface IProductAccessor

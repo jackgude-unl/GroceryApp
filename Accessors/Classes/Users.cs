@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Security.AccessControl;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Accessors.Interfaces;
@@ -17,15 +18,13 @@ namespace Accessors.Classes
         public string FirstName { get; }
         public string LastName { get; }
         public string Email { get; }
-        public string Password { get; }
 
-        public User(string firstName, string lastName, string email, string password, int userId = 0)
+        public User(string firstName, string lastName, string email, int userId = 0)
         {
             UserId = (userId == 0) ? GetNextFreeUserId() : userId;
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            Password = password;
         }
 
         public static int GetNextFreeUserId()
@@ -40,6 +39,38 @@ namespace Accessors.Classes
 
     public class UserAccessor : IUserAccessor
     {
+        private const int HashSize = 100;
+        private const int SaltSize = 32;
+        private const int Iterations = 100;
+
+        public User? VerifyUser(string email, string password)
+        {
+            const string query = "SELECT * FROM Users WHERE eMail = @email";
+
+            var parameters = new List<SqlParameter>
+            {
+                new("@email", email)
+            };
+
+            var userData = DatabaseAccessor.ExecuteQuery(query, parameters);
+            var row = userData.Rows[0];
+            var user = new User((string)row[1],
+                (string)row[2],
+                (string)row[3],
+                (int)row[0]);
+            var hash = (byte[])row[4];
+            var salt = (byte[])row[5];
+
+            var newHash = new Rfc2898DeriveBytes(password, salt, Iterations, HashAlgorithmName.SHA256).GetBytes(HashSize);
+
+            for (var i = 0; i < hash.Length; i++)
+            {
+                if (hash[i] != newHash[i]) return null;
+            }
+
+            return user;
+        }
+
         public IEnumerable<User> GetAllUsers()
         {
             const string query = "SELECT * FROM Users";
@@ -48,10 +79,9 @@ namespace Accessors.Classes
             var usersList = new List<User>();
             foreach (DataRow row in userData.Rows)
             {
-                var user = new User(row[1].ToString()!,
-                    row[2].ToString()!,
-                    row[3].ToString()!,
-                    row[4].ToString()!,
+                var user = new User((string)row[1],
+                    (string)row[2],
+                    (string)row[3],
                     (int)row[0]);
 
                 usersList.Add(user);
@@ -71,26 +101,34 @@ namespace Accessors.Classes
 
             var userData = DatabaseAccessor.ExecuteQuery(query, parameters);
             var row = userData.Rows[0];
-            var user = new User(row[1].ToString()!,
-                row[2].ToString()!,
-                row[3].ToString()!,
-                row[4].ToString()!,
+            var user = new User((string)row[1],
+                (string)row[2],
+                (string)row[3],
                 (int)row[0]);
-            
+
             return user;
         }
 
-        public bool AddUserToDb(User user)
+        public bool AddUserToDb(User user, string password)
         {
-            const string query = "INSERT INTO Users (FirstName, LastName, Email, UserPassword)" + 
-                                 "VALUES (@FirstName, @LastName, @Email, @UserPassword)";
+            var salt = new byte[SaltSize];
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(salt);
+            }
+
+            var hash = new Rfc2898DeriveBytes(password, salt, Iterations, HashAlgorithmName.SHA256);
+
+            const string query = "INSERT INTO Users (FirstName, LastName, Email, PasswordHash, PasswordSalt)" +
+                                 "VALUES (@FirstName, @LastName, @Email, @PasswordHash, @PasswordSalt)";
 
             var parameters = new List<SqlParameter>
             {
                 new("@FirstName", user.FirstName),
                 new("@LastName", user.LastName),
                 new("@Email", user.Email),
-                new("@UserPassword", user.Password)
+                new("@PasswordHash", hash.GetBytes(HashSize)),
+                new("@PasswordSalt", salt)
             };
 
             var rows = DatabaseAccessor.ExecuteNonQuery(query, parameters);
