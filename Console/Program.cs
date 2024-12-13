@@ -1,5 +1,9 @@
 ﻿using Accessors.Classes;
 using Accessors.Interfaces;
+using Managers.Interfaces;
+using Engines;
+using Engines.Interfaces;
+using Managers;
 using Microsoft.Identity.Client;
 
 public class Program
@@ -65,8 +69,12 @@ public class Program
     public static void PrintProducts()
     {
         var accessor = new ProductAccessor();
+        var engine = new ProductEngine();
+        var manager = new ProductManager(accessor, engine);
 
         var products = accessor.GetAllProducts();
+
+        Console.WriteLine("TEST");
         foreach (var prod in products)
         {
             Console.WriteLine(string.Concat(prod.ProductId) + " " + prod.Name);

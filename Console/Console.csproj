@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Accessors\Accessors.csproj" />
+	<ProjectReference Include="..\Engines\Engines.csproj" />
+	<ProjectReference Include="..\Managers\Managers.csproj" />
   </ItemGroup>
+
 
 </Project>

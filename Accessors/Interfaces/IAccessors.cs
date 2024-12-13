@@ -31,6 +31,7 @@ namespace Accessors.Interfaces
         string Description { get; }
         decimal Price { get; }
         IEnumerable<string> Images { get; }
+        string Category { get; }
     }
 
     public interface IProductAccessor
