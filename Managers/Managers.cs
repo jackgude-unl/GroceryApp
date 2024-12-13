@@ -27,9 +27,9 @@ namespace Managers
         public List<Product> SearchBar(string search)
         {
             var products = _ProductAccessor.GetAllProducts();
-            if (category != null)
+            if (!string.IsNullOrWhiteSpace(search))
             {
-                return _ProductEngine.SortByCategory(products, category).ToList();
+                return _ProductEngine.SearchBar(products, search).ToList();
             }
             else
             {

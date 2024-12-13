@@ -156,6 +156,11 @@ public class Program
         var manager = new ProductManager(accessor, engine);
 
         var products = accessor.GetAllProducts();
+        var searchResults = manager.SearchBar("daily");
+        foreach (var prod in searchResults)
+        {
+            Console.WriteLine(string.Concat(prod.ProductId) + " " + prod.Name);
+        }
 
         Console.WriteLine("TEST");
         foreach (var prod in products)

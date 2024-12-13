@@ -15,7 +15,8 @@ namespace Engines
         public List<Product> SearchBar(IEnumerable<Product> products, string search)
         {
             return products
-                .Where(p => p.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
+                .Where(p => p.Name.Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                p.Description.Contains(search, StringComparison.OrdinalIgnoreCase))
                 .OrderBy(p => p.Name)
                 .ToList();
         }

@@ -17,8 +17,6 @@ namespace Accessors.Classes
         public decimal Price { get;}
 
         public Product(int productId, string name, string description, decimal price)
-
-        public Product(int productId, string name, string description, decimal price)
         {
             ProductId = productId;
             Name = name;
@@ -40,7 +38,7 @@ namespace Accessors.Classes
                 var product = new Product((int)row[0],
                     row[1].ToString()!,
                     row[2].ToString()!,
-                    (decimal)row[3],
+                    (decimal)row[3]
                     );
 
                 productList.Add(product);
@@ -112,7 +110,7 @@ namespace Accessors.Classes
             var product = new Product((int)row[0],
                 row[1].ToString()!,
                 row[2].ToString()!,
-                (decimal)row[3],
+                (decimal)row[3]
                 );
 
             return product;
