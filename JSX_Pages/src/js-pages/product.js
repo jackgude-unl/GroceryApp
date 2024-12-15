@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import '../css-pages/product.css'
 
 function ProductsPage() {
-    const [products, setProducts] = useState([]); // State to store products
-    const [error, setError] = useState(null); // State to handle errors
+    const [products, setProducts] = useState([]);
+    const [error, setError] = useState(null);
 
-    // Fetch products from the backend
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('http://localhost:8081/products'); // Fetch from backend
+                const response = await fetch('http://localhost:5156/api/products');
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
@@ -34,10 +34,10 @@ function ProductsPage() {
             <div className="product-list">
                 {products.length > 0 ? (
                     products.map(product => (
-                        <div key={product.ProductID} className="product-card">
-                            <h3>{product.ProductName}</h3>
-                            <p>{product.ProductDescription}</p>
-                            <p><strong>Price:</strong> ${product.Price.toFixed(2)}</p>
+                        <div key={product.productId} className="product-card">
+                            <h3>{product.name}</h3>
+                            <p>{product.description}</p>
+                            <p><strong>Price:</strong> ${product.price.toFixed(2)}</p>
                         </div>
                     ))
                 ) : (
