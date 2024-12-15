@@ -5,3 +5,33 @@
 /.vs
 obj/
 bin/
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Temporary files
+.cache/
+.temp/
+
+# Coverage files
+coverage/
