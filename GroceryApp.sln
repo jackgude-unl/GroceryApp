@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accessors", "Accessors\Acce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unit Tests", "Unit Tests\Unit Tests.csproj", "{E115EC6B-15B9-48AE-8E6E-7ACFD261048D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{04E6A75B-8860-4B23-A5C8-F232A084E822}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Console\Console.csproj", "{04E6A75B-8860-4B23-A5C8-F232A084E822}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
