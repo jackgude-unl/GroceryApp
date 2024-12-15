@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-
+import '../css-pages/cart.css'
 function CartPage() {
     return (
         <div className="cart-page">

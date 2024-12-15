@@ -1,0 +1,88 @@
+.hero {
+    position: relative;
+    background-image: url('/public/grocerybanner.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero h2,
+.hero .search-bar,
+.hero .find-btn {
+    position: relative;
+    z-index: 2; 
+}
+
+.search-bar {
+    padding: 10px;
+    width: 60%;
+    margin: 20px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.find-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.find-btn:hover {
+    background-color: #45a049;
+}
+
+.categories-banner {
+    background-color: #c5c4c4; 
+    padding: 60px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 150px;
+    height: 60px; 
+    text-align: center; 
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.category-item:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
