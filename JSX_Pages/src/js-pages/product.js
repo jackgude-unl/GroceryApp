@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
-import '../css-pages/product.css'
+import '../css-pages/product.css';
 
 function ProductsPage() {
     const [products, setProducts] = useState([]);
@@ -10,18 +10,15 @@ function ProductsPage() {
         const fetchProducts = async () => {
             try {
                 const response = await fetch('http://localhost:5156/api/products');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
                 const data = await response.json();
-                setProducts(data); 
+                setProducts(data);
             } catch (err) {
-                setError(err.message); 
+                setError(err.message);
             }
         };
 
         fetchProducts();
-    }, []); 
+    }, []);
 
     return (
         <div className="products-page">
@@ -36,6 +33,11 @@ function ProductsPage() {
                     products.map(product => (
                         <div key={product.productId} className="product-card">
                             <h3>{product.name}</h3>
+                            <img
+                                src={`http://localhost:5156/Images/${product.name}.jpg`}
+                                alt={product.name}
+                                className="product-image"
+                            />
                             <p>{product.description}</p>
                             <p><strong>Price:</strong> ${product.price.toFixed(2)}</p>
                         </div>

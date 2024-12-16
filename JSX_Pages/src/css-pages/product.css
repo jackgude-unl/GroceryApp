@@ -42,5 +42,10 @@
     font-weight: bold;
     margin-top: 10px;
 }
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 
