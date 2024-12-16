@@ -16,6 +16,9 @@ function App() {
     };
 
     const handleLogout = () => {
+        localStorage.removeItem('userId');
+        localStorage.removeItem('userEmail');
+        window.dispatchEvent(new Event('storage'));
         setUser(null);
         navigate("/login");
     };

@@ -20,6 +20,23 @@ function CartPage() {
         fetchCart();
     }, [localStorage.getItem('userId')]);
 
+    useEffect(() => {
+        const handleStorageChange = () => {
+            if (!localStorage.getItem('userId')) {
+                setCart(null);
+                setProducts({});
+                setError('Please log in to view your cart');
+                setLoading(false);
+            }
+        };
+
+        window.addEventListener('storage', handleStorageChange);
+        
+        return () => {
+            window.removeEventListener('storage', handleStorageChange);
+        };
+    }, []);
+
     const fetchCart = async () => {
         const userId = localStorage.getItem('userId');
         if (!userId) {
@@ -53,7 +70,7 @@ function CartPage() {
     };
 
     if (loading) return <div className="cart-page"><p>Loading cart...</p></div>;
-    if (error) return <div className="cart-page"><p className="error">Error: {error}</p></div>;
+    if (error) return <div className="cart-page"><p className="error">Your cart is empty</p></div>;
     if (!cart || cart.productsInCart.length === 0) {
         return <div className="cart-page"><p>Your cart is empty</p></div>;
     }

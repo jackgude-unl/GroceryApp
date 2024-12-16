@@ -52,23 +52,44 @@ namespace GroceryAppAPI.Controllers
         [HttpGet("user/{userId}")]
         public IActionResult GetCartByUserId(int userId)
         {
+            if (userId <= 0)
+            {
+                return BadRequest(new { error = "Invalid user ID" });
+            }
+
             try
             {
                 var cart = _cartAccessor.GetCartByUserId(userId);
+                
                 if (cart == null)
-                    return NotFound($"Cart for user ID {userId} not found");
+                {
+                    return Ok(new { 
+                        cartId = 0,
+                        userId = userId,
+                        productsInCart = new List<object>()
+                    });
+                }
 
                 return Ok(cart);
             }
+            catch (SqlException ex)
+            {
+                return StatusCode(500, new { error = "Database error occurred" });
+            }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = ex.Message });
+                return StatusCode(500, new { error = "An unexpected error occurred" });
             }
         }
 
         [HttpPost("user/{userId}/product/{productId}")]
         public IActionResult AddToCart(int userId, int productId, [FromQuery] int quantity = 1)
         {
+            if (userId <= 0)
+            {
+                return BadRequest(new { error = "Invalid user ID" });
+            }
+
             try
             {
                 Cart cart;
@@ -117,6 +138,11 @@ namespace GroceryAppAPI.Controllers
         [HttpDelete("{cartId}/product/{productId}")]
         public IActionResult RemoveFromCart(int cartId, int productId)
         {
+            if (cartId <= 0)
+            {
+                return BadRequest(new { error = "Invalid cart ID" });
+            }
+
             try
             {
                 const string deleteQuery = "DELETE FROM CartProducts WHERE CartID = @CartID AND ProductID = @ProductID";
@@ -132,7 +158,6 @@ namespace GroceryAppAPI.Controllers
                     return NotFound($"Product {productId} not found in cart {cartId}");
                 }
 
-                // Get updated cart
                 var cart = _cartAccessor.GetCartByCartId(cartId);
                 return Ok(cart);
             }

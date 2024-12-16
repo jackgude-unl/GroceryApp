@@ -25,20 +25,16 @@ function LoginPage({ onLogin }) {
             const data = await response.json();
 
             if (response.ok) {
-                // Store user data in localStorage
                 localStorage.setItem('userId', data.userId);
                 localStorage.setItem('userEmail', data.email);
                 
-                // Log to verify storage
                 console.log('User logged in:', {
                     userId: localStorage.getItem('userId'),
                     userEmail: localStorage.getItem('userEmail')
                 });
 
-                // Call the onLogin prop with user data
                 onLogin(data);
                 
-                // Navigate to home page
                 navigate("/");
             } else {
                 setError(data.error || "Login failed. Please check your credentials.");
