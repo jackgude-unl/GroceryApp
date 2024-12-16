@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Engines.Interfaces;
+﻿using Engines.Interfaces;
 using Accessors.Classes;
 using Accessors.Interfaces;
 using Managers.Interfaces;
-using Engines;
 
 
 namespace Managers
