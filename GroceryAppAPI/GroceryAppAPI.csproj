@@ -11,5 +11,8 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
+	<ProjectReference Include="..\Engines\Engines.csproj" />
+	<ProjectReference Include="..\Managers\Managers.csproj" />
+	<ProjectReference Include="..\Accessors\Accessors.csproj" />
   </ItemGroup>
 </Project>

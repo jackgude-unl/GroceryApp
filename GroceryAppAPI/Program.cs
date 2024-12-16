@@ -1,5 +1,10 @@
 using Accessors.Interfaces;
-using Accessors.Classes;    
+using Accessors.Classes;
+using Managers.Interfaces;
+using Managers.Interfaces;
+using Engines;
+using Engines.Interfaces;
+using Managers;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
@@ -9,6 +14,8 @@ builder.Services.AddScoped<IUserAccessor, UserAccessor>();
 builder.Services.AddScoped<ICategoryAccessor, CategoryAccessor>();
 builder.Services.AddScoped<ICartAccessor, CartAccessor>();
 builder.Services.AddScoped<ISaleAccessor, SaleAccessor>();
+builder.Services.AddScoped<IProductManager, ProductManager>();
+builder.Services.AddScoped<IProductEngine, ProductEngine>();
 
 builder.Services.AddCors(options =>
 {

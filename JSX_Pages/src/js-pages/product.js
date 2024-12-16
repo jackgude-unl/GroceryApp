@@ -1,27 +1,31 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../App.css';
 import '../css-pages/product.css'
 
 function ProductsPage() {
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
+    const location = useLocation();
 
     useEffect(() => {
         const fetchProducts = async () => {
+            const searchParams = new URLSearchParams(location.search);
+            const searchQuery = searchParams.get('search');
             try {
-                const response = await fetch('http://localhost:5156/api/products');
+                const response = await fetch(`http://localhost:5156/api/products?search=${encodeURIComponent(searchQuery || '')}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 const data = await response.json();
-                setProducts(data); 
+                setProducts(data);
             } catch (err) {
-                setError(err.message); 
+                setError(err.message);
             }
         };
 
         fetchProducts();
-    }, []); 
+    }, [location.search]);
 
     return (
         <div className="products-page">

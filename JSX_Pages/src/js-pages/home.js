@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
-import '../css-pages/home.css'
+import '../css-pages/home.css';
 
 function HomePage() {
+    const [searchQuery, setSearchQuery] = useState('');
+    const navigate = useNavigate();
+    const updatePage = () => { navigate(`/products?search=${encodeURIComponent(searchQuery)}`) };
     return (
         <div className="home">
             <section className="hero">
                 <div className="hero-content">
                     <h2>Your One-Stop Shop for Fresh and Quality Groceries!</h2>
-                    <input type="text" placeholder="Search for products..." className="search-bar" />
-                    <button className="find-btn">Find</button>
+                    <input type="text" placeholder="Search for products..." className="search-bar" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+                    <button className="find-btn" onClick={updatePage}>Find </button>
                 </div>
             </section>
             <section className="categories">

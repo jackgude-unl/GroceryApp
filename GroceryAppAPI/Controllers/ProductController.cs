@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Accessors.Classes;
 using Accessors.Interfaces;
+using Managers.Interfaces;
+using Engines;
+using Engines.Interfaces;
+using Managers;
 using System;
 using System.Collections.Generic;
 
@@ -10,19 +14,23 @@ namespace GroceryAppAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductAccessor _productAccessor;
+        private readonly ProductAccessor _productAccessor;
+        private readonly ProductEngine _productengine;
+        private readonly ProductManager _productmanager;
 
-        public ProductsController(IProductAccessor productAccessor)
+        public ProductsController()
         {
-            _productAccessor = productAccessor;
+            _productAccessor = new ProductAccessor();
+            _productengine = new ProductEngine();
+            _productmanager = new ProductManager(_productAccessor, _productengine);
         }
 
         [HttpGet]
-        public IActionResult GetAllProducts()
+        public IActionResult GetAllProducts([FromQuery] string search = null)
         {
             try
             {
-                IEnumerable<Product> products = _productAccessor.GetAllProducts();
+                IEnumerable<Product> products = _productmanager.SearchBar(search);
                 return Ok(products);
             }
             catch (Exception ex)
