@@ -6,10 +6,15 @@ import '../css-pages/login.css';
 function LoginPage({ onLogin }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
+        setError(null);
+
         try {
             const response = await fetch("http://localhost:5156/api/Users/login", {
                 method: "POST",
@@ -17,15 +22,33 @@ function LoginPage({ onLogin }) {
                 body: JSON.stringify({ email, password }),
             });
 
+            const data = await response.json();
+
             if (response.ok) {
-                const data = await response.json();
+                // Store user data in localStorage
+                localStorage.setItem('userId', data.userId);
+                localStorage.setItem('userEmail', data.email);
+                
+                // Log to verify storage
+                console.log('User logged in:', {
+                    userId: localStorage.getItem('userId'),
+                    userEmail: localStorage.getItem('userEmail')
+                });
+
+                // Call the onLogin prop with user data
                 onLogin(data);
+                
+                // Navigate to home page
                 navigate("/");
             } else {
-                alert("Login failed. Please check your credentials.");
+                setError(data.error || "Login failed. Please check your credentials.");
+                console.error("Login failed:", data);
             }
         } catch (error) {
+            setError("Error connecting to the server. Please try again.");
             console.error("Error logging in:", error);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -36,6 +59,7 @@ function LoginPage({ onLogin }) {
     return (
         <div className="login">
             <h1>Login</h1>
+            {error && <p className="error-message">{error}</p>}
             <form className="login-form" onSubmit={handleSubmit}>
                 <label>
                     Email:
@@ -44,6 +68,7 @@ function LoginPage({ onLogin }) {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
+                        disabled={loading}
                     />
                 </label>
                 <label>
@@ -53,16 +78,22 @@ function LoginPage({ onLogin }) {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
+                        disabled={loading}
                     />
                 </label>
                 <div className="button-group">
-                    <button type="submit" className="form-button">
-                        Login
+                    <button 
+                        type="submit" 
+                        className="form-button"
+                        disabled={loading}
+                    >
+                        {loading ? "Logging in..." : "Login"}
                     </button>
                     <button
                         type="button"
                         onClick={handleNavigateToCreateUser}
                         className="form-button"
+                        disabled={loading}
                     >
                         Register
                     </button>

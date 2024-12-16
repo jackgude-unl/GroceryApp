@@ -6,8 +6,9 @@ import '../css-pages/product.css';
 function ProductsPage() {
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
+    const [addingToCart, setAddingToCart] = useState({});
     const location = useLocation();
-
+    
     useEffect(() => {
         const fetchProducts = async () => {
             const searchParams = new URLSearchParams(location.search);
@@ -27,14 +28,45 @@ function ProductsPage() {
         fetchProducts();
     }, [location.search]);
 
+    const addToCart = async (productId) => {
+        const userId = localStorage.getItem('userId');
+        if (!userId) {
+            alert('Please log in to add items to cart');
+            return;
+        }
+
+        setAddingToCart(prev => ({ ...prev, [productId]: true }));
+        
+        try {
+            const response = await fetch(
+                `http://localhost:5156/api/carts/user/${userId}/product/${productId}?quantity=1`,
+                { 
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+            );
+
+            if (!response.ok) {
+                throw new Error('Failed to add to cart');
+            }
+
+            alert('Added to cart!');
+        } catch (err) {
+            setError('Failed to add item to cart');
+            alert('Error adding to cart');
+        } finally {
+            setAddingToCart(prev => ({ ...prev, [productId]: false }));
+        }
+    };
+
     return (
         <div className="products-page">
             <h2>Our Products</h2>
 
-            {/* Handle errors */}
             {error && <p className="error">Error: {error}</p>}
 
-            {/* Display products */}
             <div className="product-list">
                 {products.length > 0 ? (
                     products.map(product => (
@@ -46,7 +78,14 @@ function ProductsPage() {
                                 className="product-image"
                             />
                             <p>{product.description}</p>
-                            <p><strong>Price:</strong> ${product.price.toFixed(2)}</p>
+                            <p className="price"><strong>Price:</strong> ${product.price.toFixed(2)}</p>
+                            <button 
+                                className="add-to-cart-button"
+                                onClick={() => addToCart(product.productId)}
+                                disabled={addingToCart[product.productId]}
+                            >
+                                {addingToCart[product.productId] ? 'Adding...' : 'Add to Cart'}
+                            </button>
                         </div>
                     ))
                 ) : (
