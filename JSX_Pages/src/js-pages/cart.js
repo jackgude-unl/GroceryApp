@@ -67,42 +67,52 @@ function CartPage() {
             return total + calculateItemTotal(item.productId, item.quantity);
         }, 0);
     };
-
     return (
         <div className="cart-page">
-            <h2>Your Cart</h2>
+            <h2 className="cart-page__title">Your Cart</h2>
+
             <div className="cart-items">
-                {cart.productsInCart.map(item => {
-                    const product = products[item.productId];
-                    return (
-                        <div key={item.productId} className="cart-item">
-                            <div className="product-image">
-                                <img
-                                    src={`http://localhost:5156/Images/${product?.name}.jpg`}
-                                    alt={product?.name || `Product ${item.productId}`}
-                                    onError={(e) => e.target.src = '/placeholder.jpg'}
-                                />
-                            </div>
-                            <div className="product-details">
-                                <h3>{product?.name || `Product ${item.productId}`}</h3>
-                                <p>{product?.description}</p>
-                                <p className="price">${product?.price?.toFixed(2) || '0.00'} each</p>
-                                <div className="quantity-control">
-                                    <span>Quantity: {item.quantity}</span>
+                {cart.productsInCart.length > 0 ? (
+                    cart.productsInCart.map(item => {
+                        const product = products[item.productId];
+                        return (
+                            <div key={item.productId} className="cart-item">
+                                <div className="cart-item__image">
+                                    <img
+                                        src={`http://localhost:5156/Images/${product?.name}.jpg`}
+                                        alt={product?.name || `Product ${item.productId}`}
+                                        onError={(e) => e.target.src = '/placeholder.jpg'}
+                                    />
                                 </div>
-                                <p className="item-total">
-                                    Total: ${calculateItemTotal(item.productId, item.quantity).toFixed(2)}
-                                </p>
+                                <div className="cart-item__details">
+                                    <h3 className="cart-item__name">{product?.name || `Product ${item.productId}`}</h3>
+                                    <p className="cart-item__description">{product?.description}</p>
+                                    <p className="cart-item__price">
+                                        ${product?.price?.toFixed(2) || '0.00'} each
+                                    </p>
+                                    <div className="cart-item__quantity-control">
+                                        <span>Quantity: {item.quantity}</span>
+                                    </div>
+                                    <p className="cart-item__total">
+                                        Total: ${calculateItemTotal(item.productId, item.quantity).toFixed(2)}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    );
-                })}
+                        );
+                    })
+                ) : (
+                    <p className="cart-page__empty-message">Your cart is empty.</p>
+                )}
             </div>
+
             <div className="cart-summary">
-                <h3>Cart Total: ${calculateCartTotal().toFixed(2)}</h3>
-                <button className="checkout-button">Proceed to Checkout</button>
+                <h3 className="cart-summary__total">
+                    Cart Total: ${calculateCartTotal().toFixed(2)}
+                </h3>
+                <button className="cart-summary__checkout-button">Proceed to Checkout</button>
             </div>
         </div>
     );
 }
+
 export default CartPage;

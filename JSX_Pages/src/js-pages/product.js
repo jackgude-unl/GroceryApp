@@ -62,25 +62,27 @@ function ProductsPage() {
     };
 
     return (
-        <div className="products-page">
-            <h2>Our Products</h2>
-
-            {error && <p className="error">Error: {error}</p>}
-
+        <div className="product-page">
+            <h2 className="product-page__title">Our Products</h2>
+    
+            {error && <p className="product-error">Error: {error}</p>}
+    
             <div className="product-list">
                 {products.length > 0 ? (
                     products.map(product => (
                         <div key={product.productId} className="product-card">
-                            <h3>{product.name}</h3>
+                            <h3 className="product-card__title">{product.name}</h3>
                             <img
                                 src={`http://localhost:5156/Images/${product.name}.jpg`}
                                 alt={product.name}
                                 className="product-image"
                             />
-                            <p>{product.description}</p>
-                            <p className="price"><strong>Price:</strong> ${product.price.toFixed(2)}</p>
-                            <button 
-                                className="add-to-cart-button"
+                            <p className="product-card__description">{product.description}</p>
+                            <p className="product-price">
+                                <strong>Price:</strong> ${product.price.toFixed(2)}
+                            </p>
+                            <button
+                                className="product-add-to-cart-button"
                                 onClick={() => addToCart(product.productId)}
                                 disabled={addingToCart[product.productId]}
                             >
@@ -89,7 +91,7 @@ function ProductsPage() {
                         </div>
                     ))
                 ) : (
-                    <p>Loading products...</p>
+                    <p className="product-loading">Loading products...</p>
                 )}
             </div>
         </div>
