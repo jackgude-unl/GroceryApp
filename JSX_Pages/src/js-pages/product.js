@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../App.css';
-import '../css-pages/product.css'
+import '../css-pages/product.css';
 
 function ProductsPage() {
     const [products, setProducts] = useState([]);
@@ -40,6 +40,11 @@ function ProductsPage() {
                     products.map(product => (
                         <div key={product.productId} className="product-card">
                             <h3>{product.name}</h3>
+                            <img
+                                src={`http://localhost:5156/Images/${product.name}.jpg`}
+                                alt={product.name}
+                                className="product-image"
+                            />
                             <p>{product.description}</p>
                             <p><strong>Price:</strong> ${product.price.toFixed(2)}</p>
                         </div>

@@ -53,7 +53,6 @@ namespace GroceryAppAPI.Controllers
             }
             catch (IndexOutOfRangeException)
             {
-                // This might happen if no rows are returned (depending on how GetProductById is implemented)
                 return NotFound(new { error = "Product not found." });
             }
             catch (Exception ex)
@@ -68,7 +67,6 @@ namespace GroceryAppAPI.Controllers
             try
             {
                 IEnumerable<Product> products = _productAccessor.GetProductsByCategoryId(categoryId);
-                // If no products found for the category, it's not necessarily an error, just return empty array
                 return Ok(products);
             }
             catch (Exception ex)
