@@ -20,11 +20,11 @@ function HomePage() {
                 <h3>Shop by Category</h3>
                 <div className='categories-banner'>
                     <div className="category-list">
-                        <div className="category-item">Fresh Foods</div>
-                        <div className="category-item">Pantry Essentials</div>
-                        <div className="category-item">Frozen & Prepared Foods</div>
-                        <div className="category-item">Beverages</div>
-                        <div className="category-item">Snacks & Desserts</div>
+                        <div className="category-item">Meat and Seafood</div>
+                        <div className="category-item">Fruits and Vegatables</div>
+                        <div className="category-item">Dairy, Eggs, and Cheese</div>
+                        <div className="category-item">Bakery</div>
+                        <div className="category-item">Frozen</div>
                     </div>
                 </div>
             </section>
